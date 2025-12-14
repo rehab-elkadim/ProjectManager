@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+body {
+  @apply m-0;
+  font-family: "Didot", "Garamond", serif;
+  background-color: black;
+}
+
+/* Left diagonal 45° cut — only on md+ */
+.clip-left {
+  clip-path: none;
+}
+
+@media (min-width: 768px) {
+  .clip-left {
+    clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+  }
+}
