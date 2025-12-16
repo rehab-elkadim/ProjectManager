@@ -16,3 +16,7 @@ body {
     clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
   }
 }
+/* optional helper */
+.input {
+  @apply bg-transparent border-b border-gray-600 py-4 text-lg outline-none;
+}
